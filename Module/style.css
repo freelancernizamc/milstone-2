@@ -11,7 +11,7 @@ nav{
     align-items: center;
     background-color: goldenrod;
 }
-nav img{
+.img{
     width: 80px;
     height: 80px;
 }
@@ -46,4 +46,12 @@ marquee{
     color:gold;
     text-align: center;
     background-color: blueviolet;
+    an
+}
+
+.footer-menu a{
+    text-decoration: none;
+    
+
+    
 }

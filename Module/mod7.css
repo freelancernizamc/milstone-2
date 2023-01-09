@@ -1,0 +1,111 @@
+.practice h2{
+    text-align: center;
+}
+.mega-box{
+    width: 500px;
+    height: 400px;
+    border: 5px solid steelblue;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+.mango-people{
+    width: 500px;
+    height: 400px;
+    border: 5px solid brown;
+}
+.mini{
+    width: 100px;
+    border: 3px solid indianred;
+}
+.short-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container, .inner{
+    width: 150px;
+    height: 150px;
+    border: 2px solid khaki;
+}
+.container{
+    background-color: lightblue;
+}
+.inner{
+    background-color: lightcoral;
+    transform: translate(50px, 50px) scale(0.75) rotate(45deg);
+}
+.box{
+    width: 200px;
+    height: 300px;
+    border: 20px solid cadetblue;
+    background-color: coral;
+    transition: width 9s height 5s, transform 5s;
+    /* ease;
+    linear 2s; */
+}
+.box:hover{
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+/* animation */
+@keyframes sliding{
+    0%{
+        background-color: aqua;
+        left: 0px;
+        top: 0px;
+        transform: scale(0.5);
+    }
+    50%{
+        background-color: blue;
+        left: 100px;
+        top: 200px;
+        transform: scale(1);
+    }
+    100%{
+        background-color: blueviolet;
+        left: 200px;
+        top: 0px;
+        transform: scale(0.5);
+    }
+    
+}
+.stage{
+    width: 500px;
+    height: 300px;
+    background-color: lawngreen;
+    
+}
+.bisibility-box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid purple;
+}
+#box-3{
+    color:peru;
+    /* display: none; */
+    visibility: hidden;
+}
+:root{
+    --primary-color: slateblue;
+    --secodary-color: green;
+    --single-border: 2px solid red;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: yellowgreen;
+}
