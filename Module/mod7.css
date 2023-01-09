@@ -48,7 +48,7 @@
     height: 200px;
     transform: rotate(180deg);
 }
-.ball{
+.ball-animation{
     width: 50px;
     height: 50px;
     background-color: red;
@@ -100,6 +100,9 @@
     --secodary-color: green;
     --single-border: 2px solid red;
 }
+section{
+    text-align: center;
+}
 footer{
     width: 100%;
     height: 250px;
@@ -108,4 +111,30 @@ footer{
     align-items: center;
     background-color: black;
     color: yellowgreen;
+}
+.cricket-field{
+    border: 1px solid;
+}
+
+.cricket-ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+    position: relative;
+    left: 515px;
+    transition: transform 1s ease-out 0.3s;
+}
+
+.cricket-field:hover .cricket-ball{
+    transform: translate(750px, -100px);
+}
+
+.cricket-bat{
+    transition: transform 0.2s ease-in;
+}
+
+.cricket-field:hover .cricket-bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
 }

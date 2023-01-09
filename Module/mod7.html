@@ -8,11 +8,39 @@
     <link rel="shortcut icon" href="images/nizam.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mod7.css">
+    <style>
+        .field{
+            border: 1px solid;
+        }
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: red;
+            position: relative;
+            left: 515px;
+            transition: transform 1s ease-out 0.3s;
+        }
+
+        .field:hover .ball {
+            transform: translate(750px, -100px);
+        }
+
+        .bat {
+            transition: transform 0.2s ease-in;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav> 
-            <img src="images/nizam.png">
+            <img class="img" src="images/nizam.png">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="mod7.html">Module 7</a></li>
@@ -89,9 +117,8 @@
         <h3> Video 7-5:  Cricket match animation using transition and transform
         </h3>
         <div class="field">
-            <div class="ball">
-
-            </div>
+            <img class="bat" src="images/bat.png" alt="">
+            <div class="ball"></div>
         </div>
         <p> ease-in= start, ease-out= slodown, translate positive value goes in lower site,</p>
     </section>
@@ -101,7 +128,7 @@
         <br>
         <h4> Lets explore animation</h4>
         <div class="stage">
-            <div class="ball">
+            <div class="ball-animation">
 
             </div>
         </div>
@@ -178,6 +205,14 @@
             Ans: display: none;
 
         </p>
+    </section>
+    <section class="cricket"> 
+        <div class="cricket-field">
+            <img class="bat" src="images/bat.png" alt="">
+            <div class="cricket-ball"></div>
+        </div>
+
+
     </section>
     <br>
     <footer>
