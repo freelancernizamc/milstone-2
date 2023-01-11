@@ -43,6 +43,20 @@
     /* ease;
     linear 2s; */
 }
+.mod7-section{
+    width: 90%;
+    height: 95vh;
+    margin: auto;
+    border: dashed 2px purple;
+    box-sizing: border-box;
+    
+   
+}
+.field{
+    height: 95vh;
+    background-image: url(images/bg.png);
+    cursor:grab;
+}
 .box:hover{
     width: 200px;
     height: 200px;
@@ -113,7 +127,12 @@ footer{
     color: yellowgreen;
 }
 .cricket-field{
+    height: 100vh;
     border: 1px solid;
+    background-image: url(images/Cricket-Pitch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 .cricket-ball{
@@ -127,10 +146,11 @@ footer{
 }
 
 .cricket-field:hover .cricket-ball{
-    transform: translate(750px, -100px);
+    transform: translate(760px, -100px);
 }
 
 .cricket-bat{
+    padding-top: 10px;
     transition: transform 0.2s ease-in;
 }
 
