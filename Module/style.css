@@ -67,9 +67,7 @@ marquee{
 
 .footer-menu a{
     text-decoration: none;
-    
-
-    
+    color:bisque;  
 }
 footer{
     width: 100%;
@@ -110,9 +108,7 @@ img{
     transform: rotate(-30deg);
      transition: transform .1s ease-in;
 }
-.bat{
-   
-}
+
 .field:hover .bat{
     position: relative;
     transform-origin:middle;
@@ -150,5 +146,26 @@ img{
 .field:hover .bat_2 {
     transform: rotate(-15deg);
    
+   
 
+}
+/* grid layout practice */
+.grid-practice{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap:10px;
+    justify-content: center;
+    flex: 1;
+    margin-left: 5px;
+    align-items:center;
+    text-align: center;
+    background-color: seagreen;
+    
+}
+.grid{
+    width:200px;
+    height: 200px;
+    background-color: purple;
 }

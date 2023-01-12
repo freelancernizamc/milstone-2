@@ -76,7 +76,7 @@
     font-weight: 200;
 }
 .blue2{
-    flex-grow:calc(2)
+    flex-grow:calc(2);
 }
 .login-form{
     display: flex;
@@ -101,12 +101,13 @@
     font-weight: 600;
     
 }
-.container{
+.container-grid{
     display: grid;
     /* grid-template-columns: 200px auto 200px 300px; */
     /* grid-template-columns: repeat(3, 1fr) 100px; */
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* justify-items: center; */
+    
 
 
 }
