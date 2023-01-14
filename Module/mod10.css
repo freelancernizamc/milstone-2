@@ -1,29 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milstone 02- Module-10 Practice</title>
-    <link rel="shortcut icon" href="images/nizam.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav> 
-            <img class="img" src="images/nizam.png">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="mod7.html">Module-7</a></li>
-                <li><a href="mod8.html">Module-8</a></li>
-                <li><a href="mod9.html">Module-9</a></li>
-                <li><a href="mod10.html">Module-10</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner">
-        <img style="width:100%;height:300px;" src="images/milstone2.png">
-    </div>
-    <marquee> WElcome to Milstone 2 Practice section. I am Nizam, Student of Programming Hero Course, Batch 07.</marquee>
-    <section class="course-module style-section">
-        <h1 class="module-title">Module-10 Practice</h1><br>
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Open+Sans&family=Poppins:wght@500&display=swap');
+/* common styles/utilities */
+main{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+/* top players style */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/* ----------------- */
+/* top blogs style */
+/* ------------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+/* courses style */
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+}

@@ -12,7 +12,8 @@
     text-align: center;
 }
 .style-section{
-    width: 90%;
+    width: 100%;
+    max-width: 90%;
     height: 95vh;
     margin: auto;
     border: dashed 2px crimson;
@@ -71,6 +72,8 @@ marquee{
 }
 footer{
     width: 100%;
+    max-width: 95%;
+    margin: auto;
     height: 250px;
     display: flex;
     justify-content: space-around;
