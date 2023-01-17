@@ -103,8 +103,4 @@ img{
         grid-column: 1;
     }
 }
-@media  and(min-width: 577px) {
-    .row{
-        height: 400px;
-    }
-}
+
